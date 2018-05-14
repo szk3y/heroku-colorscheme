@@ -26,7 +26,7 @@ hi clear SpellBad
 hi SpellBad cterm=underline
 syntax reset
 
-let g:colors_name = "heroku-terminal"
+let g:colors_name = "modified-heroku-terminal"
 
 if &t_Co == 88 || &t_Co == 256
   " Returns an approximate grey index for the given grey level
@@ -245,13 +245,13 @@ if &t_Co == 88 || &t_Co == 256
   call <SID>X("StatusLine", s:window, s:yellow, "reverse")
   call <SID>X("StatusLineNC", s:window, s:foreground, "reverse")
   call <SID>X("VertSplit", s:window, s:window, "none")
-  call <SID>X("Visual", "", s:selection, "")
+  call <SID>X("Visual", s:background, s:selection, "")
   call <SID>X("Directory", s:blue, "", "")
   call <SID>X("ModeMsg", s:green, "", "")
   call <SID>X("MoreMsg", s:green, "", "")
   call <SID>X("Question", s:green, "", "")
   call <SID>X("WarningMsg", s:red, "", "")
-  call <SID>X("MatchParen", s:selection, s:foreground, "")
+  call <SID>X("MatchParen", s:orange, s:background, "")
   call <SID>X("Folded", s:comment, s:background, "")
   call <SID>X("FoldColumn", "", s:background, "")
   if version >= 700
