@@ -1,4 +1,4 @@
-" Heroku Colorscheme 
+" Heroku Colorscheme
 "
 " - iTerm2 only
 " - Depends on heroku colorscheme for iTerm2
@@ -26,7 +26,7 @@ hi clear SpellBad
 hi SpellBad cterm=underline
 syntax reset
 
-let g:colors_name = "modified-heroku-terminal"
+let g:colors_name = "heroku-terminal"
 
 if &t_Co == 88 || &t_Co == 256
   " Returns an approximate grey index for the given grey level
